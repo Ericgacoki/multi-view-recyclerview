@@ -14,7 +14,7 @@ class Repository {
             chat("Early?\nThis must be a joke! \uD83D\uDE02", OTHER),
             chat("Not really...Thought you said you watch till late hours! \uD83D\uDE1C", MINE),
             chat(".", MINE),
-            chat("Hey, Good Morning ☕", MINE),
+            chat("Hey, Good Morning ☕", chatType = MINE),
             chat("Good morning cool boy!", OTHER),
             chat("I feel too lazy to get out of my bed \uD83D\uDE34....wgggh", MINE),
             chat("It\'s okay \uD83D\uDE02 \uD83D\uDE02", OTHER),
@@ -23,7 +23,7 @@ class Repository {
             chat("*worry", OTHER),
             chat("It\'s okay...let me force myself to do it as usual!", MINE),
             chat("Have you taken breakfast already?", MINE),
-            chat("Not yet!", OTHER)
+            chat("Not yet!", OTHER),
         )
     }
 }

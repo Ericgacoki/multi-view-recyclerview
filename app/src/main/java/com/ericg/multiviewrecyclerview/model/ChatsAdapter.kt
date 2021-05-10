@@ -33,8 +33,8 @@ class ChatsAdapter(var chatsList: ArrayList<ChatModel>) :
         return if (chatsList[position].chatType == ChatType.MINE) MINE else OTHER
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return if (viewType == MINE) {
+    override fun onCreateViewHolder(parent: ViewGroup, chatType: Int): RecyclerView.ViewHolder {
+        return if (chatType == MINE) {
             val view = MyChatBinding.inflate(LayoutInflater.from(parent.context), parent, false)
             MyChatViewHolder(view)
         } else {

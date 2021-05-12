@@ -7,14 +7,14 @@ import com.ericg.multiviewrecyclerview.model.ChatType.OTHER
 class Repository {
     fun getChats(): ArrayList<chat>{
         return arrayListOf(
-            chat("I appreciate \uD83D\uDE0A... Thank you so much \uD83D\uDE0A", MINE),
+            chat("I appreciate \uD83D\uDE0A... Thank you so much \uD83D\uDE0A",chatType =  MINE),
             chat("It\'s a small thing!", OTHER),
             chat("Have a good night \uD83E\uDD24", OTHER),
             chat("You gon\' sleep too early though\uD83E\uDD14... are you tired?", MINE),
             chat("Early?\nThis must be a joke! \uD83D\uDE02", OTHER),
             chat("Not really...Thought you said you watch till late hours! \uD83D\uDE1C", MINE),
             chat(".", MINE),
-            chat("Hey, Good Morning ☕", chatType = MINE),
+            chat("Hey, Good Morning ☕", MINE),
             chat("Good morning cool boy!", OTHER),
             chat("I feel too lazy to get out of my bed \uD83D\uDE34....wgggh", MINE),
             chat("It\'s okay \uD83D\uDE02 \uD83D\uDE02", OTHER),

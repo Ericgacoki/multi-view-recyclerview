@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ericg.multiviewrecyclerview.databinding.MyChatBinding
 import com.ericg.multiviewrecyclerview.databinding.OtherChatBinding
 
-private const val MINE = 0
-private const val OTHER = 1
+private const val MINE = 0 // my chat
+private const val OTHER = 1 // other persons' chat
 
 class ChatsAdapter(var chatsList: ArrayList<ChatModel>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
